@@ -55,6 +55,9 @@ body.dark-mode #contact {
 }
 #contact {
   background-image: url(../images/one.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .carousel-caption span {
   color: #198754;
