@@ -1,0 +1,22 @@
+.nav-link:hover{
+            background-color: #FFC107;
+            border-radius: 16px;
+            font-size: 20px;
+            color: #198754;
+      }
+      .nav-link:active{
+        color: #FFC107;
+        font-size: larger;
+      }
+      .navbar navbar-expand-lg navbar-dark bg-success fixed-top{
+        opacity: 0.1;
+      }
+      .btn btn-warning ms-lg-3:hover{
+        font-size: 20px;
+      }
+      #contact{
+        background-image: url(../images/one.jpg);
+}
+.carousel-caption span{
+    color: #198754;
+}
