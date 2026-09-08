@@ -1,22 +1,61 @@
-.nav-link:hover{
-            background-color: #FFC107;
-            border-radius: 16px;
-            font-size: 20px;
-            color: #198754;
-      }
-      .nav-link:active{
-        color: #FFC107;
-        font-size: larger;
-      }
-      .navbar navbar-expand-lg navbar-dark bg-success fixed-top{
-        opacity: 0.1;
-      }
-      .btn btn-warning ms-lg-3:hover{
-        font-size: 20px;
-      }
-      #contact{
-        background-image: url(../images/one.jpg);
+body {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
 }
-.carousel-caption span{
-    color: #198754;
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .card {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark-mode #about {
+  background-color: #121212 !important;
+  color: white;
+}
+
+body.dark-mode #about .text-muted {
+  color: #d0d0d0 !important;
+}
+
+body.dark-mode .text-dark {
+  color: white !important;
+}
+body.dark-mode #contact {
+  background-image: url(images/darkflag.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.nav-link:hover {
+  background-color: #ffc107;
+  border-radius: 16px;
+  font-size: 20px;
+  color: #198754;
+}
+.nav-link:active {
+  color: #ffc107;
+  font-size: larger;
+}
+.navbar navbar-expand-lg navbar-dark bg-success fixed-top {
+  opacity: 0.1;
+}
+.btn btn-warning ms-lg-3:hover {
+  font-size: 20px;
+}
+#contact {
+  background-image: url(../images/one.jpg);
+}
+.carousel-caption span {
+  color: #198754;
 }
