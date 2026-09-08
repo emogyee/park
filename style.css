@@ -54,7 +54,7 @@ body.dark-mode #contact {
   font-size: 20px;
 }
 #contact {
-  background-image: url(../images/one.jpg);
+  background-image: url(images/one.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
