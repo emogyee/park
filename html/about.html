@@ -3,29 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../images/park.png">
-    <title>Park|About</title>
+    <meta
+      name="description"
+      content="Learn more about Park and what makes Nigeria a world-class travel destination."
+    />
+    <link rel="icon" type="image/png" href="../images/park.png" />
+    <title>Park | About</title>
     <link rel="stylesheet" href="../style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-3" href="../index.html">
-          <img
-            src="../images/park.png"
-            class="img-fluid"
-            style="height: 50px; width: auto"
-            alt="Park Logo"
-          />
+        <a
+          class="navbar-brand fw-bold fs-3"
+          href="../index.html"
+          aria-label="Park home page"
+        >
+          <img src="../images/park.png" alt="Park Logo" />
         </a>
 
         <button
@@ -33,114 +36,99 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html"> Home </a>
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> About </a>
+              <a class="nav-link active" href="about.html">About</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
-
-          <a href="explore.html" class="btn btn-warning ms-lg-3"> Explore Now </a>
+          <a href="explore.html" class="btn btn-warning ms-lg-3">Explore Now</a>
         </div>
-        <button id="themeToggle" class="btn btn">
-    🌙 
+
+        <button
+          id="themeToggle"
+          class="theme-toggle ms-2"
+          type="button"
+          aria-label="Switch to dark mode"
+        >
+          🌙
+        </button>
       </div>
     </nav>
-    <br /><br /><br />
-    <section id="about" class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <img
-              src="../images/map.png"
-              class="img-fluid rounded shadow"
-              alt="Nigeria"
-            />
-          </div>
 
-          <div class="col-lg-6">
-            <h3 class="text-success fw-bold">ABOUT PARK</h3>
+    <main>
+      <section id="about" class="bg-light pt-5">
+        <div class="container py-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img
+                src="../images/map.png"
+                class="img-fluid rounded shadow"
+                alt="Map of Nigeria"
+              />
+            </div>
 
-            <h2 class="display-5 fw-bold">Discover the beauty of Nigeria</h2>
-
-            <p class="text-muted mt-3">
-              Nigeria is home to incredible landscapes, diverse cultures,
-              beautiful cities and unforgettable experiences.
-            </p>
-
-            <p class="text-muted">
-              Tour Naija helps you discover interesting destinations and
-              experiences across the country.
-            </p>
-
-            <a href="explore.html" class="btn btn-success">
-              Explore Nigeria
-            </a>
+            <div class="col-lg-6">
+              <p class="section-tag">About Park</p>
+              <h2 class="section-title">Discover the beauty of Nigeria</h2>
+              <p class="text-muted mt-3">
+                Nigeria is home to incredible landscapes, diverse cultures,
+                beautiful cities, and unforgettable experiences.
+              </p>
+              <p class="text-muted">
+                Park helps you discover interesting destinations and experiences
+                across the country.
+              </p>
+              <a href="explore.html" class="btn btn-success">Explore Nigeria</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="bg-success text-white py-5">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-6 col-lg-3">
-            <h2 class="display-5 fw-bold">36+</h2>
-
-            <p>States</p>
-          </div>
-
-          <div class="col-6 col-lg-3">
-            <h2 class="display-5 fw-bold">100+</h2>
-
-            <p>Attractions</p>
-          </div>
-
-          <div class="col-6 col-lg-3">
-            <h2 class="display-5 fw-bold">50+</h2>
-
-            <p>Cities</p>
-          </div>
-
-          <div class="col-6 col-lg-3">
-            <h2 class="display-5 fw-bold">∞</h2>
-
-            <p>Adventures</p>
+      <section class="bg-success text-white py-5">
+        <div class="container">
+          <div class="row text-center g-4">
+            <div class="col-6 col-lg-3">
+              <h2 class="display-5 fw-bold">36+</h2>
+              <p class="mb-0">States</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <h2 class="display-5 fw-bold">100+</h2>
+              <p class="mb-0">Attractions</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <h2 class="display-5 fw-bold">50+</h2>
+              <p class="mb-0">Cities</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <h2 class="display-5 fw-bold">∞</h2>
+              <p class="mb-0">Adventures</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <br><br><br>
-
-
-
-
+      </section>
+    </main>
 
     <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-5">
-            <a class="navbar-brand fw-bold fs-3" href="#">
-              <img
-                src="../images/park.png"
-                class="img-fluid"
-                style="height: 50px; width: auto"
-                alt="Tour Naija logo"
-              />
+            <a class="navbar-brand fw-bold fs-3" href="../index.html">
+              <img src="../images/park.png" alt="Park logo" />
             </a>
-
             <p class="text-secondary">
               Discover the beauty, culture and adventure of Nigeria.
             </p>
@@ -148,66 +136,66 @@
 
           <div class="col-6 col-lg-3">
             <h5>Quick Links</h5>
-
             <a
               href="../index.html"
               class="d-block text-secondary text-decoration-none mb-2"
+              >Home</a
             >
-              Home
-            </a>
-
             <a
               href="about.html"
               class="d-block text-secondary text-decoration-none mb-2"
+              >About</a
             >
-              About
-            </a>
-
             <a
               href="contact.html"
               class="d-block text-secondary text-decoration-none mb-2"
+              >Contact</a
             >
-              Contact
-            </a>
-
             <a
               href="explore.html"
               class="d-block text-secondary text-decoration-none"
+              >Explore Now</a
             >
-              Explore Now
-            </a>
           </div>
 
           <div class="col-6 col-lg-4">
             <h5>Follow Us</h5>
-
             <div class="d-flex gap-3 fs-4">
-              <a href="http://facebook.com" class="text-white">
-                <i class="bi bi-facebook"></i>
-              </a>
-
-              <a href="http://instagram.com" class="text-white">
-                <i class="bi bi-instagram"></i>
-              </a>
-
-              <a href="http://twitter.com" class="text-white">
-                <i class="bi bi-twitter-x"></i>
-              </a>
-
-              <a href="http://youtube.com" class="text-white">
-                <i class="bi bi-youtube"></i>
-              </a>
+              <a
+                href="https://facebook.com"
+                class="text-white"
+                aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://instagram.com"
+                class="text-white"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://twitter.com"
+                class="text-white"
+                aria-label="Twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://youtube.com"
+                class="text-white"
+                aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
             </div>
           </div>
         </div>
 
         <hr class="my-4" />
-
         <p class="text-secondary mb-0 text-center">
-          © 2026 park. All rights reserved.
+          © 2026 Park. All rights reserved.
         </p>
       </div>
     </footer>
+
     <script src="../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>

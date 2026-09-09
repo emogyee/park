@@ -1,456 +1,223 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="images/park.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Park|Home</title>
+    <meta name="description" content="Explore beautiful destinations, culture, and unforgettable experiences across Nigeria." />
+    <link rel="icon" type="image/png" href="images/park.png" />
+    <title>Park | Home</title>
     <link rel="stylesheet" href="style.css" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <style></style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-3" href="index.html">
-          <img
-            src="images/park.png"
-            class="img-fluid"
-            style="height: 50px; width: auto"
-            alt="Park Logo"
-          />
+        <a class="navbar-brand fw-bold fs-3" href="index.html" aria-label="Park home page">
+          <img src="images/park.png" alt="Park Logo" />
         </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="html/index.html"> Home </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="html/about.html"> About </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="html/contact.html"> Contact Us</a>
-            </li>
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="html/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="html/contact.html">Contact Us</a></li>
           </ul>
-
-          <a href="html/explore.html" class="btn btn-warning ms-lg-3">
-            Explore Now
-          </a>
+          <a href="html/explore.html" class="btn btn-warning ms-lg-3">Explore Now</a>
         </div>
-        <button id="themeToggle" class="btn btn">🌙</button>
+
+        <button id="themeToggle" class="theme-toggle ms-2" type="button" aria-label="Switch to dark mode">🌙</button>
       </div>
     </nav>
 
-    <section id="home">
-      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
+    <main>
+      <section id="home">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
 
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="1"
-          ></button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/Eko Atlantic City Nigeria 🇳🇬.jpg" class="d-block w-100" alt="Nigeria coast view" />
+              <div class="carousel-caption">
+                <h1>Discover Nigeria</h1>
+                <p>Explore the beauty, culture, and adventure waiting across every region.</p>
+                <a href="html/explore.html" class="btn btn-warning btn-lg">Explore Now</a>
+              </div>
+            </div>
 
-          <button
-            type="button"
-            data-bs-target="#heroCarousel"
-            data-bs-slide-to="2"
-          ></button>
+            <div class="carousel-item">
+              <img src="images/Lagos, Nigeria.jpg" class="d-block w-100" alt="Lagos skyline" />
+              <div class="carousel-caption">
+                <h1>Your Adventure Awaits</h1>
+                <p>There is always somewhere new to explore, feel, and remember.</p>
+                <a href="html/explore.html" class="btn btn-warning btn-lg">Start Exploring</a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/3rd.jpg" class="d-block w-100" alt="Nature scene" />
+              <div class="carousel-caption">
+                <h1>Experience Nature</h1>
+                <p>From mountains to forests and waterfalls, discover the pulse of Nigeria.</p>
+                <a href="html/contact.html" class="btn btn-warning btn-lg">Plan Your Trip</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
+      </section>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="images/Eko Atlantic City Nigeria 🇳🇬.jpg"
-              class="d-block w-100"
-              style="height: 650px; object-fit: cover"
-              alt="Nigeria landscape"
-            />
-
-            <div class="carousel-caption">
-              <h1 class="display-3 fw-bold">Discover Nigeria</h1>
-
-              <p class="fs-5">
-                Explore the beauty, culture and adventure of Nigeria.
-              </p>
-
-              <a href="html/explore.html" class="btn btn-warning btn-lg">
-                Explore Now
-              </a>
-            </div>
+      <section id="destinations" class="bg-white">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="section-tag">Explore</p>
+            <h2 class="section-title">Popular Destinations</h2>
+            <p class="text-muted">Discover amazing places across Nigeria.</p>
           </div>
 
-          <div class="carousel-item">
-            <img
-              src="images/Lagos, Nigeria.jpg"
-              class="d-block w-100"
-              style="height: 650px; object-fit: cover"
-              alt="Nature"
-            />
-
-            <div class="carousel-caption">
-              <h1 class="display-3 fw-bold">Your Adventure Awaits</h1>
-
-              <p class="fs-5">There is always somewhere new to explore.</p>
-
-              <a href="html/explore.html" class="btn btn-warning btn-lg">
-                Start Exploring
-              </a>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img
-              src="images/3rd.jpg"
-              class="d-block w-100"
-              style="height: 650px; object-fit: cover"
-              alt="Mountains"
-            />
-
-            <div class="carousel-caption">
-              <h1 class="display-3 fw-bold">Experien<span>ce Nature</span></h1>
-
-              <p class="fs-5">
-                Discover moun<span>tains, forests and waterfalls.</span>
-              </p>
-
-              <a href="html/contact.html" class="btn btn-warning btn-lg">
-                Plan Your Trip
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </section>
-    <section id="destinations" class="py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <p class="text-success fw-bold">EXPLORE</p>
-
-          <h2 class="display-5 fw-bold">Popular Destinations</h2>
-
-          <p class="text-muted">Discover amazing places across Nigeria.</p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow border-0">
-              <img
-                src="images/lagos.jpg"
-                class="card-img-top"
-                style="height: 250px; object-fit: cover"
-                alt="Lagos"
-              />
-
-              <div class="card-body">
-                <p class="text-success fw-bold">Lagos</p>
-
-                <h4 class="card-title fw-bold">Experience Lagos</h4>
-
-                <p class="card-text text-muted">
-                  Discover beaches, entertainment, culture and the exciting
-                  lifestyle of Lagos.
-                </p>
-
-                <a href="html/explore.html" class="btn btn-outline-success">
-                  Discover
-                </a>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/lagos.jpg" class="card-img-top" alt="Lagos" />
+                <div class="card-body">
+                  <p class="text-success fw-bold">Lagos</p>
+                  <h4 class="card-title fw-bold">Experience Lagos</h4>
+                  <p class="card-text text-muted">Discover beaches, entertainment, culture, and the exciting lifestyle of Lagos.</p>
+                  <a href="html/explore.html" class="btn btn-outline-success">Discover</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow border-0">
-              <img
-                src="images/Abuja, Nigeria.jpg"
-                class="card-img-top"
-                style="height: 250px; object-fit: cover"
-                alt="Abuja"
-              />
-
-              <div class="card-body">
-                <p class="text-success fw-bold">Abuja</p>
-
-                <h4 class="card-title fw-bold">Discover Abuja</h4>
-
-                <p class="card-text text-muted">
-                  Explore Nigeria's capital city, landmarks and beautiful
-                  landscapes.
-                </p>
-
-                <a href="html/explore.html" class="btn btn-outline-success">
-                  Discover
-                </a>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/Abuja, Nigeria.jpg" class="card-img-top" alt="Abuja" />
+                <div class="card-body">
+                  <p class="text-success fw-bold">Abuja</p>
+                  <h4 class="card-title fw-bold">Discover Abuja</h4>
+                  <p class="card-text text-muted">Explore Nigeria's capital city, landmarks, and beautiful landscapes.</p>
+                  <a href="html/explore.html" class="btn btn-outline-success">Discover</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow border-0">
-              <img
-                src="images/obudu.jpg"
-                class="card-img-top"
-                style="height: 250px; object-fit: cover"
-                alt="Obudu Mountains"
-              />
-
-              <div class="card-body">
-                <p class="text-success fw-bold">Cross River</p>
-
-                <h4 class="card-title fw-bold">Obudu Mountains</h4>
-
-                <p class="card-text text-muted">
-                  Enjoy breathtaking mountain views and beautiful natural
-                  scenery.
-                </p>
-
-                <a href="html/explore.html" class="btn btn-outline-success">
-                  Discover
-                </a>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/obudu.jpg" class="card-img-top" alt="Obudu Mountains" />
+                <div class="card-body">
+                  <p class="text-success fw-bold">Cross River</p>
+                  <h4 class="card-title fw-bold">Obudu Mountains</h4>
+                  <p class="card-text text-muted">Enjoy breathtaking mountain views and beautiful natural scenery.</p>
+                  <a href="html/explore.html" class="btn btn-outline-success">Discover</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow border-0">
-              <img
-                src="images/calabar.jpg"
-                class="card-img-top"
-                style="height: 250px; object-fit: cover"
-                alt="Calabar"
-              />
-
-              <div class="card-body">
-                <p class="text-success fw-bold">Calabar</p>
-
-                <h4 class="card-title fw-bold">Visit Calabar</h4>
-
-                <p class="card-text text-muted">
-                  Experience culture, festivals and beautiful natural
-                  attractions.
-                </p>
-
-                <a href="html/explore.html" class="btn btn-outline-success">
-                  Discover
-                </a>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/calabar.jpg" class="card-img-top" alt="Calabar" />
+                <div class="card-body">
+                  <p class="text-success fw-bold">Calabar</p>
+                  <h4 class="card-title fw-bold">Visit Calabar</h4>
+                  <p class="card-text text-muted">Experience culture, festivals, and beautiful natural attractions.</p>
+                  <a href="html/explore.html" class="btn btn-outline-success">Discover</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow border-0">
-              <img
-                src="images/jos.jpg"
-                class="card-img-top"
-                style="height: 250px; object-fit: cover"
-                alt="Jos"
-              />
-
-              <div class="card-body">
-                <p class="text-success fw-bold">Plateau</p>
-
-                <h4 class="card-title fw-bold">Explore Jos</h4>
-
-                <p class="card-text text-muted">
-                  Enjoy beautiful hills, cool weather and amazing landscapes.
-                </p>
-
-                <a href="html/explore.html" class="btn btn-outline-success">
-                  Discover
-                </a>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/jos.jpg" class="card-img-top" alt="Jos" />
+                <div class="card-body">
+                  <p class="text-success fw-bold">Plateau</p>
+                  <h4 class="card-title fw-bold">Explore Jos</h4>
+                  <p class="card-text text-muted">Enjoy beautiful hills, cool weather, and amazing landscapes.</p>
+                  <a href="html/explore.html" class="btn btn-outline-success">Discover</a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow border-0">
-              <img
-                src="images/enugu.jpg"
-                class="card-img-top"
-                style="height: 250px; object-fit: cover"
-                alt="Enugu"
-              />
-
-              <div class="card-body">
-                <p class="text-success fw-bold">Enugu</p>
-
-                <h4 class="card-title fw-bold">Discover Enugu</h4>
-
-                <p class="card-text text-muted">
-                  Explore waterfalls, caves, hills and beautiful scenery.
-                </p>
-
-                <a href="html/explore.html" class="btn btn-outline-success">
-                  Discover
-                </a>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/enugu.jpg" class="card-img-top" alt="Enugu" />
+                <div class="card-body">
+                  <p class="text-success fw-bold">Enugu</p>
+                  <h4 class="card-title fw-bold">Discover Enugu</h4>
+                  <p class="card-text text-muted">Explore waterfalls, caves, hills, and beautiful scenery.</p>
+                  <a href="html/explore.html" class="btn btn-outline-success">Discover</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <section id="about" class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <img
-              src="images/map.png"
-              class="img-fluid rounded shadow"
-              alt="Nigeria"
-            />
-          </div>
+      </section>
 
-          <div class="col-lg-6">
-            <p class="text-success fw-bold">ABOUT PARK</p>
-
-            <h2 class="display-5 fw-bold">Discover the beauty of Nigeria</h2>
-
-            <p class="text-muted mt-3">
-              Nigeria is home to incredible landscapes, diverse cultures,
-              beautiful cities and unforgettable experiences.
-            </p>
-
-            <p class="text-muted">
-              Park helps you discover interesting destinations and experiences
-              across the country.
-            </p>
-
-            <a href="html/explore.html" class="btn btn-success">
-              Explore Nigeria
-            </a>
+      <section id="about" class="bg-light">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img src="images/map.png" class="img-fluid rounded shadow" alt="Map of Nigeria" />
+            </div>
+            <div class="col-lg-6">
+              <p class="section-tag">About Park</p>
+              <h2 class="section-title">Discover the beauty of Nigeria</h2>
+              <p class="text-muted mt-3">Nigeria is home to incredible landscapes, diverse cultures, beautiful cities, and unforgettable experiences.</p>
+              <p class="text-muted">Park helps you discover interesting destinations and experiences across the country.</p>
+              <a href="html/explore.html" class="btn btn-success">Explore Nigeria</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-5">
             <a class="navbar-brand fw-bold fs-3" href="index.html">
-              <img
-                src="images/park.png"
-                class="img-fluid"
-                style="height: 50px; width: auto"
-                alt="Tour Naija logo"
-              />
+              <img src="images/park.png" alt="Park logo" />
             </a>
-
-            <p class="text-secondary">
-              Discover the beauty, culture and adventure of Nigeria.
-            </p>
+            <p class="text-secondary">Discover the beauty, culture, and adventure of Nigeria.</p>
           </div>
 
           <div class="col-6 col-lg-3">
             <h5>Quick Links</h5>
-
-            <a
-              href="index.html"
-              class="d-block text-secondary text-decoration-none mb-2"
-            >
-              Home
-            </a>
-
-            <a
-              href="html/about.html"
-              class="d-block text-secondary text-decoration-none mb-2"
-            >
-              About
-            </a>
-
-            <a
-              href="html/contact.html"
-              class="d-block text-secondary text-decoration-none mb-2"
-            >
-              Contact
-            </a>
-
-            <a
-              href="html/explore.html"
-              class="d-block text-secondary text-decoration-none"
-            >
-              Explore Now
-            </a>
+            <a href="index.html" class="d-block text-secondary text-decoration-none mb-2">Home</a>
+            <a href="html/about.html" class="d-block text-secondary text-decoration-none mb-2">About</a>
+            <a href="html/contact.html" class="d-block text-secondary text-decoration-none mb-2">Contact</a>
+            <a href="html/explore.html" class="d-block text-secondary text-decoration-none">Explore Now</a>
           </div>
 
           <div class="col-6 col-lg-4">
             <h5>Follow Us</h5>
-
             <div class="d-flex gap-3 fs-4">
-              <a href="http://facebook.com" class="text-white">
-                <i class="bi bi-facebook"></i>
-              </a>
-
-              <a href="http://instagram.com" class="text-white">
-                <i class="bi bi-instagram"></i>
-              </a>
-
-              <a href="http://twitter.com" class="text-white">
-                <i class="bi bi-twitter-x"></i>
-              </a>
-
-              <a href="http://youtube.com" class="text-white">
-                <i class="bi bi-youtube"></i>
-              </a>
+              <a href="https://facebook.com" class="text-white" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com" class="text-white" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://twitter.com" class="text-white" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://youtube.com" class="text-white" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
             </div>
           </div>
         </div>
 
         <hr class="my-4" />
-
-        <p class="text-secondary mb-0 text-center">
-          © 2026 park. All rights reserved.
-        </p>
+        <p class="text-secondary mb-0 text-center">© 2026 Park. All rights reserved.</p>
       </div>
     </footer>
+
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
